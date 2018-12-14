@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <unistd.h>
 #include <string.h>
+#include <time.h>
 #include <gsl/gsl_rng.h>
 #include <gsl/gsl_math.h>
 gsl_rng_type *_gsl_rng_type;
@@ -43,14 +44,27 @@ int main(int argc,char **argv ){
     trials=atoi(optarg);
   }
  initTool();
+ time_t start = time(NULL);
+ if(seconds != 0){
+ while(difftime(time(NULL),start)<seconds){	
+ 	double j = gsl_hypot(getRDM(),getRDM());
+ 	if(j<=1)
+  	successes++;
+	trials++;
+ }
+ }else{
  for(i=0;i<trials;i++){
  double j = gsl_hypot(getRDM(),getRDM());
  if(j<=1)
   successes++;
  }
+ }
  finalizeTool();
   double pi = (double)successes/trials*4;
-  printf("Estimated Value:%.3f\n",pi);
+  double diff = pi-3.1415926535898;
+  if(diff<0)diff*=-1;
+  double error = diff/3.1415926535898;
+  printf("%.7f\t%.7f\t%.7f\t%.7f\n",difftime(time(NULL),start),pi,diff,error);
  return 0;
 
 }
