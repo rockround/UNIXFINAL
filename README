@@ -1,0 +1,2 @@
+notes:
+For problem 2, because using structs seemed difficult and overkill, not to mention I haven't taken C yet... I stored the result of each test as either S for success or F for fail. 
