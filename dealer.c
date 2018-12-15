@@ -57,9 +57,9 @@ int main(int argc,char **argv ){
     return 1;
    }
  printf("\n");
-   int fd=0;
+   int fd;
    if(log==1)
-   	fd = open(path,O_WRONLY|O_CREAT|O_APPEND,S_IRWXU);
+   	fd = open(path,O_WRONLY|O_CREAT|O_APPEND,S_IRUSR|S_IWUSR|S_IRGRP);
  for(i=0;i<trials;i++){
  if(pipe(pype)==-1){
    fprintf(stderr,"Bad Pipe\n");
@@ -72,9 +72,10 @@ int main(int argc,char **argv ){
    execlp("./Hand","Hand","-p",percent,NULL);
   }
    close(pype[1]);
-   char reading_buf[20];
+   char reading_buf[7];
    char msg[400];
-   while(read(pype[0],reading_buf,20)>0)
+   char dat[1];
+   while(read(pype[0],reading_buf,7)>0)
    {
 	sprintf(msg,"PID %d returned %s.\n",peyed,reading_buf);
    	if(strcmp(reading_buf,"Success")==0)
@@ -83,7 +84,8 @@ int main(int argc,char **argv ){
 		printf(msg);
 		}
 	if(log==1){
-		write(fd,msg,strlen(msg));
+		dat[0] = reading_buf[0];
+		write(fd,dat,1);
 		}
    }
    close(pype[0]);

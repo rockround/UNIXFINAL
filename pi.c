@@ -64,7 +64,7 @@ int main(int argc,char **argv ){
   double diff = pi-3.1415926535898;
   if(diff<0)diff*=-1;
   double error = diff/3.1415926535898;
-  printf("%.7f\t%.7f\t%.7f\t%.7f\n",difftime(time(NULL),start),pi,diff,error);
+  printf("%d\t%.7f\t%.7f\t%.7f\t%.7f\n",trials,difftime(time(NULL),start),pi,diff,error);
  return 0;
 
 }

@@ -42,7 +42,7 @@ int main(int argc,char **argv ){
   for(i=1;i<32;i++)
   signal(i,fightForLife);
   while(1){
-	printf("Child Waiting\n");
+	printf("child waiting\n");
 	nanosleep(&t,NULL);
   }
   }
@@ -53,7 +53,7 @@ int main(int argc,char **argv ){
    while(1)
    {
    int sig = getRDM();
-	printf("Sending signal %d to child\n",sig);
+	printf("parent sending signal %d\n",sig);
 	kill((pid_t)peyed,sig);
 	nanosleep(&t,NULL);
    }
@@ -63,12 +63,12 @@ int main(int argc,char **argv ){
 }
 
 void fightForLife(int sig){
-printf("Isaac resisting death:%d\n",sig);
+printf("Signal Received by child %d\n",sig);
 }
 void abortChild(int sig){
-printf("Abraham received order for Isaac to die:%d\n",sig);
-kill((pid_t)sig,SIGKILL);
+printf("Signal Received by parent %d\n",sig);
+kill((pid_t)peyed,SIGKILL);
 wait();
-printf("Successful abortion of isaac\n");
+printf("Parent will exit now\n");
 exit(0);
 }
