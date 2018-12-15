@@ -1,4 +1,9 @@
 notes:
 For problem 2, because using structs seemed difficult and overkill, not to mention I haven't taken C yet... I stored the result of each test as either S for success or F for fail.
 
+Bonus 1 was done.
+
+The program is called lnfactn.c. 
+at n=752, stirling's approximation is within .1% of the real value. This value was attained by running the program on 1000 samples and grepping for .099.
+
 
