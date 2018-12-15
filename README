@@ -6,4 +6,13 @@ Bonus 1 was done.
 The program is called lnfactn.c. 
 at n=752, stirling's approximation is within .1% of the real value. This value was attained by running the program on 1000 samples and grepping for .099.
 
+Bonus 2 was done.
 
+The program is called uglyNum.c
+% was used to determine if it was ugly.
+
+
+Bonus 3 was done.
+
+The program is called sigmaDiv.c
+% was used to determine divisibility, and summed up.

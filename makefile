@@ -10,3 +10,9 @@ makeMighty: mighty.c
 	gcc $^ -o mighty
 makeTerminator: terminator.c
 	gcc $^ -o terminator -lm -lgsl -L$$HOME/local/gsl-2.5/lib -lgslcblas -I$$HOME/local/gsl-2.5/include
+makelnfactn: lnfactn.c
+	gcc $^ -o lnfactn -lm
+makeUgly: uglyNum.c
+	gcc $^ -o ugly
+makeNumCheck: sigmaDiv.c
+	gcc $^ -o sigmaDiv -lm
