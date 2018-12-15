@@ -1,0 +1,95 @@
+commit 18c72b69caf26350a7237746f99878853759338e
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Sat Dec 15 17:43:13 2018 -0600
+
+    Completed all bonus parts
+
+commit 4e0e742ece3c87b4288b811e10ee6a12be27087f
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Sat Dec 15 17:09:18 2018 -0600
+
+    Added bonus 1
+
+commit 6ce275f087518018282a200086b426e07291b107
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Sat Dec 15 16:19:55 2018 -0600
+
+    Completed question 4
+
+commit 8a1dbb37c76ab6b41a2138f1314e7d2bca6cdfc0
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Sat Dec 15 15:46:05 2018 -0600
+
+    Added terminator
+
+commit 1bde832e659159a945cd05933656d54f0be57d92
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Sat Dec 15 13:50:26 2018 -0600
+
+    Completed question 3
+
+commit e7a14d463b7e9e3146a4de88d342abc437e4bc30
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Sat Dec 15 13:24:49 2018 -0600
+
+    added mighty
+
+commit fcb44bafc9e46cce6dab3dcb85d57725de5df0f1
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Fri Dec 14 21:48:09 2018 -0600
+
+    Completed question 2
+
+commit 0ed8bde522ffeed0db45243b421c74945e587e13
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Fri Dec 14 20:38:12 2018 -0600
+
+    added pitboss
+
+commit d6983e2b14f2968c8c5ffd10e7f89f9eb95a4df9
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Fri Dec 14 20:27:53 2018 -0600
+
+    created results log
+
+commit ceb523c28358bfe0cebc87c0fa0e1202212fb851
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Fri Dec 14 20:25:32 2018 -0600
+
+    began working on question 2, imported relevant classes
+
+commit 132ba2aee9401882b97424bcfbcb8e57941d3fee
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Fri Dec 14 17:57:25 2018 -0600
+
+    Completed Problem 1
+
+commit dcb165271fe6f6d4197d27f44ef4d3e61a349d37
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Fri Dec 14 17:43:45 2018 -0600
+
+    created the table, programs can do this now
+
+commit f6d6ef3f36ee1bccc450a5330c5cce4a90e9a480
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Fri Dec 14 17:18:53 2018 -0600
+
+    Added table and table building function
+
+commit ee07abfea14b7a4f6ef9e6ce7f66e46a4cea48b3
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Fri Dec 14 15:46:21 2018 -0600
+
+    Added c version of code for problem 1
+
+commit f55491ae494de25b7d01737735e356894c415fa1
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Fri Dec 14 14:27:00 2018 -0600
+
+    Got pi.sh to use monte carlo and calculate pi
+
+commit ab1d3d207f2d16e9f1305562f7067496c36707af
+Author: Yuuki Zachary Ishimaru <yzi170030@cslinux1.utdallas.edu>
+Date:   Fri Dec 14 14:26:33 2018 -0600
+
+    Got pi.sh to use monte carlo and calculate pi

@@ -1,5 +1,35 @@
-notes:
+bash
+10	0	2.00000000000000000000	1.14159265358980000000	.3633802
+100	0	2.84000000000000000000	.30159265358980000000	.0959999
+1000	4	3.16000000000000000000	.01840734641020000000	.0058592
+10000	46	3.12640000000000000000	.01519265358980000000	.0048359
+C
+10	0.0000000	3.6000000	0.4584073	0.1459156
+100	0.0000000	3.0800000	0.0615927	0.0196056
+1000	0.0000000	3.0640000	0.0775927	0.0246985
+10000	0.0000000	3.1352000	0.0063927	0.0020348
+
+1.1 
+c
+1610169687 trials, prediction 3.1415788
+
+bash
+31735 trials, prediction 3.13582665821471791621	
+
+1.2
+
+The C code was faster because it is a compiled language, and thus after compilation it is direclty read on a machine, not translated line by line by the kernel as with scripting languages.
+
+1.3
+
+The C code was also more accurate than bash with the same sample sizes, which can be attributed to the fact that the random number source was a much better one (using the mersenne twister), whereas the awk one is based on a worse PRNG.
+
+2.
 For problem 2, because using structs seemed difficult and overkill, not to mention I haven't taken C yet... I stored the result of each test as either S for success or F for fail.
+
+
+Bonus.
+
 
 Bonus 1 was done.
 
