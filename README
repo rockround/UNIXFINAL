@@ -1,3 +1,11 @@
+
+General:
+
+directories p1,p2,p3,p4 correspond to their respective problems.
+bonus is where the bonus files are.
+use make to make all necessary files in each folder.
+
+1.
 bash
 10	0	2.00000000000000000000	1.14159265358980000000	.3633802
 100	0	2.84000000000000000000	.30159265358980000000	.0959999
@@ -25,7 +33,7 @@ The C code was faster because it is a compiled language, and thus after compilat
 The C code was also more accurate than bash with the same sample sizes, which can be attributed to the fact that the random number source was a much better one (using the mersenne twister), whereas the awk one is based on a worse PRNG.
 
 2.
-For problem 2, because using structs seemed difficult and overkill, not to mention I haven't taken C yet... I stored the result of each test as either S for success or F for fail.
+For problem 2, because using structs seemed difficult, I stored the result of each test as either S for success or F for fail.
 
 
 Bonus.
